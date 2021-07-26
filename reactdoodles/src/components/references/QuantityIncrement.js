@@ -18,7 +18,7 @@ class QuantityIncrement extends React.Component{
             <div>
 
                <label>Enter Quantity: <input type = "text"  ref = {this.quantityRef}></input>
-                <button onClick = {this.incrementQuantity}>++</button>
+                <button onClick = {this.incrementQuantity}>+</button>
                </label>
 
             </div>
