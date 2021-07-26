@@ -4,6 +4,11 @@ class QuantityIncrement extends React.Component{
 
     constructor(props){
         super(props);
+        this.quantityRef = React.createRef();
+    }
+
+    incrementQuantity =()=>{
+        this.quantityRef.current.value++;
     }
 
     render(){
@@ -12,9 +17,9 @@ class QuantityIncrement extends React.Component{
         return(
             <div>
 
-                <input type = "text"></input>
+               <label>Enter Quantity: <input type = "text"  ref = {this.quantityRef}></input>
                 <button onClick = {this.incrementQuantity}>+</button>
-
+               </label>
 
             </div>
         )
