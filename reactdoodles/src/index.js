@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import QuantityIncrement from './components/references/QuantityIncrement';
 
 ReactDOM.render(
+
   <React.StrictMode>
-    <App />
+    <QuantityIncrement/>
   </React.StrictMode>,
   document.getElementById('root')
 );
