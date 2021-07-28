@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import QuantityIncrement from './components/references/QuantityIncrement';
+import UsernamePasswordLogin from './components/references/UsernamePasswordLogin';
 
 ReactDOM.render(
 
