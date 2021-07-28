@@ -9,7 +9,7 @@ import UsernamePasswordLogin from './components/references/UsernamePasswordLogin
 ReactDOM.render(
 
   <React.StrictMode>
-    <QuantityIncrement/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
