@@ -13,14 +13,19 @@ class Fibonnaci extends React.Component{
     }
 
     increment(){
+        try{
         const sum = this.state.counter1 + this.state.counter2;
         this.setState({counter1 : sum , counter2:this.state.counter1});
+        }
+        catch(error){
+            <h1>Site down come back later</h1> 
+        }
     }
 
     render(){
         return(
             <div>
-            <p>{this.state.counter1}</p>
+            <h1>{this.state.counter1}</h1>
             <button onClick = {this.increment}>Increment</button>
             </div>
         )

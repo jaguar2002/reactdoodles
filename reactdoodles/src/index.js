@@ -5,11 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import QuantityIncrement from './components/references/QuantityIncrement';
 import UsernamePasswordLogin from './components/references/UsernamePasswordLogin';
+import Fibonacci from "./components/Fibonacci.js";
 
 ReactDOM.render(
 
   <React.StrictMode>
-    <App/>
+    <Fibonacci></Fibonacci>
   </React.StrictMode>,
   document.getElementById('root')
 );
