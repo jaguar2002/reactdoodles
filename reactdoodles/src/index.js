@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import QuantityIncrement from './components/references/QuantityIncrement';
 import UsernamePasswordLogin from './components/references/UsernamePasswordLogin';
 import Fibonacci from "./components/Fibonacci.js";
+import HoverClass from "./components/HoverClass.js";
 
 ReactDOM.render(
 
   <React.StrictMode>
-    <Fibonacci></Fibonacci>
+    <HoverClass/>
   </React.StrictMode>,
   document.getElementById('root')
 );
