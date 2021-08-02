@@ -1,6 +1,6 @@
 import React from "react";
 
-const UpdatedComponent = (OriginalComponent) =>{
+const UpdatedComponent2 = (OriginalComponent) =>{
     class NewComponent extends React.Component{
         constructor(props){
             super(props);
@@ -11,8 +11,10 @@ const UpdatedComponent = (OriginalComponent) =>{
             this.clickHandler = this.clickHandler.bind(this);
         }
         clickHandler(){
-            const sum = this.state.counter1 + this.state.counter2;
-            this.setState({counter1 : sum , counter2 : this.state.counter1});
+            this.setState({counter1:this.state.counter1 + 1});
+            if(counter1 % 5 == 0){
+                this.setState({counter1:this.state.counter1});
+            }
         }
         render(){
             return <OriginalComponent counter1 = {this.state.counter1} incrementCount = {this.clickHandler}/>
