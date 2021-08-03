@@ -11,7 +11,7 @@ import HoverClass from "./components/HoverClass.js";
 ReactDOM.render(
 
   <React.StrictMode>
-    <HoverClass/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
