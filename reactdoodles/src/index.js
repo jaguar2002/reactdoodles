@@ -7,11 +7,12 @@ import QuantityIncrement from './components/references/QuantityIncrement';
 import UsernamePasswordLogin from './components/references/UsernamePasswordLogin';
 import Fibonacci from "./components/Fibonacci.js";
 import HoverClass from "./components/HoverClass.js";
+import LoginPage from './components/LoginPage.js';
 
 ReactDOM.render(
 
   <React.StrictMode>
-    <App/>
+    <LoginPage/>
   </React.StrictMode>,
   document.getElementById('root')
 );

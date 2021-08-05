@@ -42,7 +42,7 @@ class BuggyCounter extends React.Component{
   
   }
   render(){
-      if(this.state.counter === 4){
+      if(this.state.counter === 3){
               throw new Error("I crashed");
       }
       return <h1 onClick = {this.handleClick} > {this.state.counter}</h1>
@@ -56,7 +56,8 @@ function App() {
       <hr/>
       <ErrorBoundary1>
         <BuggyCounter/>
-      </ErrorBoundary1>
+        </ErrorBoundary1>i
+      
     </div>
   );
 }
