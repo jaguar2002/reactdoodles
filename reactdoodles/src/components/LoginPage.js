@@ -19,8 +19,8 @@ class LoginPage extends React.Component{
     displayAge(event){
         alert("age submitted");
         if(this.state.age < 13){
-            //  throw new Error("age invalid");
-            alert("age less than 13 is not permitted");
+            throw new Error("age invalid");
+            //alert("age less than 13 is not permitted");
           }
         event.preventDefault();
     }
